@@ -1,13 +1,17 @@
 let goinfo;
 let b;
+let button;
 
 function preload(){
 	goinfo = loadImage('gosoft.png');
 }
 
 function setup(){
-	createCanvas(windowWidth,windowHeight);
+	//createCanvas(windowWidth,windowHeight);
+	createCanvas(1024,720);
 	b = new Ball();
+	button = createButton('klikni me');
+	button.mousePressed(change);
 }
 
 function draw(){
@@ -16,6 +20,10 @@ function draw(){
 	b.move();
 	b.checkEdges();
 
+}
+
+function change(){
+	image(goinfo,this.x-140,this.y-50,random(150,200),random(80,120));
 }
 
 class Ball{
