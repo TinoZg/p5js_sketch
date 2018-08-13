@@ -8,12 +8,10 @@ div { width: 50%;
   height: 50%;
   float: left;
 }
-#div1 { 
-      background: rgba(0,0,0);
-      }
-#div3 {background: rgba(0,192,224);
-}
-#div4 { background: rgba(90,90,90);}
+#div1 { background: #000000;}
+#div3 { background: #00C0E0;}
+#div4 { background: #F0F0F0;}
+
 
 table{
   margin: auto;
