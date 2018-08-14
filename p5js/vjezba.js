@@ -5,7 +5,7 @@ let city;
 let date;
 let x;
 let humidity;
-let weathericon;
+let pic;
 
 function setup(){
   noCanvas();
@@ -18,6 +18,7 @@ function getData(data){
   console.log(data.name);
   console.log(data.main.humidity);
   console.log(data.main.pressure);
+  console.log(data.weather[0].icon);
   temp = select('#temperature');
   temp.html(data.main.temp);
   city = select('#location');
@@ -25,6 +26,8 @@ function getData(data){
   getDate();
   date = select('#date');
   date.html(x);
+  pic = select('#icon');
+  pic.attribute('src', 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png');
   humidity = select('#humidity');
   humidity.html(data.main.humidity);
   pressure = select('#pressure');
