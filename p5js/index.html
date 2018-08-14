@@ -2,31 +2,94 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="vjezba.css">
+    <title>My CSS experiment</title>
+    <link rel="stylesheet" href="hi.css">
     <script src="./libraries/p5.js"></script>
     <script src="./libraries/p5.dom.js"></script>
     <script src="./libraries/p5.sound.js"></script>
     <script src="vjezba.js"></script>
   </head>
   <body>
-    <div class='weather-app'>
-      <div class='left'>
-        <div class='temperature'><span id='temperature'>0</span>&deg;</div>
-        <div class="location"><span id="location">Unknown</span></div>
-        <div class="date"><span id="date">14.08.2018</span></div>
-      </div>
-      <div class='right'>
-        <div class='top'>
-          <img id='icon' width='75px'/>
+    <div id="div1">
+      <div class='weather-app'>
+        <div class='left'>
+          <div class='temperature'><span id='temperature'>0</span>&deg;</div>
+          <div class="location"><span id="location">Unknown</span></div>
+          <div class="date"><span id="date">14.08.2018</span></div>
         </div>
-        <div class='bottom'>
-          <div class='humidity'>
-            <img src='https://vignette.wikia.nocookie.net/moonclan-warriors/images/d/d4/Water-symbol.png/revision/latest?cb=20130309193451' height='16px'/><span id='humidity'>0</span>%
+        <div class='right'>
+          <div class='top'>
+            <img id='icon' width='85px'/>
           </div>
-          <div class='pressure'><span id='pressure'>0</span> hPa
+          <div class='bottom'>
+            <div class='humidity'>
+              <img src='https://vignette.wikia.nocookie.net/moonclan-warriors/images/d/d4/Water-symbol.png/revision/latest?cb=20130309193451' height='18px'/><span id='humidity'>0</span>%
+            </div>
+            <div class='pressure'><span id='pressure'>0</span> hPa
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div id="div2" object-fit: fill>
+      <img src="Kalendar.png" style="float:left;width:100%;height:100%;">
+    </div>
+    <div id="div3">
+      <table style="position:relative; overflow: auto; height: 100%;">
+        <thead>
+          <th> Datum </th>
+          <th> Odgovorna osoba - 5S </th>
+        </thead>
+        <tbody>
+          <tr>
+            <td> 13.08.2018 </td>
+            <td> Ante </td>
+          </tr>
+          <tr>
+            <td> 14.08.2018 </td>
+            <td> Ante </td>
+          </tr>
+          <tr>
+            <td> 15.08.2018 </td>
+            <td> Praznik </td>
+          </tr>
+          <tr>
+            <td> 16.08.2018 </td>
+            <td> Marijana </td>
+          </tr>
+          <tr>
+            <td> 17.08.2018 </td>
+            <td> Marijana </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="div4">
+      <table style="position:relative; overflow: auto; height: 100%;">
+        <thead>
+          <th> Timovi </th>
+          <th> Rezultat </th>
+        </thead>
+        <tbody>
+          <tr>
+            <td> TIM Ante </td>
+            <td> 35 </td>
+          </tr>
+          <tr>
+            <td> TIM Ivan </td>
+            <td> 35 </td>
+          </tr>
+          <tr>
+            <td> TIM Zvonimir </td>
+            <td> 35 </td>
+          </tr>
+          <tr>
+            <td> TIM Programeri </td>
+            <td> 35 </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
+
 </html>
