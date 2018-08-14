@@ -9,7 +9,7 @@ let weathericon;
 
 function setup(){
   noCanvas();
-  loadJSON(url, getData);
+  loadJSON(url, getData, 'jsonp');
 }
 
 function getData(data){
