@@ -9,7 +9,7 @@ let pic;
 
 function setup(){
   noCanvas();
-  setInterval(call, 5000);
+  setInterval(call,3600000);
 }
 
 function call(){
@@ -17,12 +17,6 @@ function call(){
 }
 
 function getData(data){
-  //info = data;
-  console.log(data.main.temp);
-  console.log(data.name);
-  console.log(data.main.humidity);
-  console.log(data.main.pressure);
-  console.log(data.weather[0].icon);
   temp = select('#temperature');
   temp.html(data.main.temp);
   city = select('#location');
