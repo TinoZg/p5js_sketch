@@ -9,10 +9,6 @@ let pic;
 
 function setup(){
   noCanvas();
-  setInterval(call,3600000);
-}
-
-function call(){
   loadJSON(url, getData);
 }
 
