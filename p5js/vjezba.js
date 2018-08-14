@@ -1,5 +1,5 @@
 let info;
-let url = 'http://api.openweathermap.org/data/2.5/weather?q=Zagreb&APPID=d5da566641898b814482126740a1971f&units=metric';
+let url = 'https://api.openweathermap.org/data/2.5/weather?q=Zagreb&APPID=d5da566641898b814482126740a1971f&units=metric';
 let temp;
 let city;
 let date;
@@ -9,7 +9,7 @@ let weathericon;
 
 function setup(){
   noCanvas();
-  loadJSON(url, getData, 'jsonp');
+  loadJSON(url, getData);
 }
 
 function getData(data){
