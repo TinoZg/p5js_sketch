@@ -9,7 +9,7 @@ let pic;
 
 function setup(){
   noCanvas();
-  setInterval(call, 660000);
+  setInterval(call, 5000);
 }
 
 function call(){
