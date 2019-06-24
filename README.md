@@ -1,3 +1,3 @@
 ## Weather application and calender
 
-Open page on [this](https://www.google.com) link.
+Open the page on [this](https://tinozg.github.io/p5js_sketch/p5js/index.html) link.
